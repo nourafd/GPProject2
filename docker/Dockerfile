@@ -28,8 +28,8 @@ RUN apt-get install ffmpeg libsm6 libxext6  -y
 
 # Install mmfashion
 RUN conda clean --all
-RUN git clone --recursive https://github.com/nourafd/GPProject2.git /mmfashion
-WORKDIR /mmfashion
+RUN git clone --recursive https://github.com/nourafd/GPProject2.git /gp1995
+WORKDIR /gp1995
 ENV FORCE_CUDA="1"
 RUN pip install -r requirements.txt
 RUN pip install --no-cache-dir -e .
