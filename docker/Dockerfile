@@ -28,8 +28,8 @@ RUN apt-get install ffmpeg libsm6 libxext6  -y
 
 # Install mmfashion
 RUN conda clean --all
-RUN git clone --recursive https://github.com/nourafd/GPProject2.git /gp1995
-WORKDIR /gp1995
+RUN git clone --recursive https://github.com/nourafd/GPProject2.git /gp1997
+WORKDIR /gp1997
 ENV FORCE_CUDA="1"
 ENV CUDA_HOME="/usr/lib/nvidia-cuda-toolkit"
 RUN pip install -r requirements.txt
